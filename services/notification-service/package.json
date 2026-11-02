@@ -1,0 +1,19 @@
+{
+  "name": "@lumen/notification-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx watch src/main.ts",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "@lumen/config": "*",
+    "@lumen/http": "*",
+    "@lumen/logger": "*"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  }
+}

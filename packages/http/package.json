@@ -1,0 +1,21 @@
+{
+  "name": "@lumen/http",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@lumen/errors": "*",
+    "@lumen/logger": "*",
+    "fastify": "^5.2.0",
+    "prom-client": "^15.1.3"
+  }
+}

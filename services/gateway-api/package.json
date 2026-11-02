@@ -1,0 +1,27 @@
+{
+  "name": "@lumen/gateway-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx watch src/main.ts",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "@lumen/config": "*",
+    "@lumen/http": "*",
+    "@lumen/internal-identity": "*",
+    "@lumen/logger": "*",
+    "@lumen/redis-client": "*",
+    "@fastify/compress": "^8.0.1",
+    "@fastify/cors": "^10.0.2",
+    "@fastify/etag": "^6.0.0",
+    "@fastify/helmet": "^13.0.1",
+    "@fastify/websocket": "^11.0.2",
+    "jose": "^5.9.6"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  }
+}

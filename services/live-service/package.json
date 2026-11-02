@@ -1,0 +1,27 @@
+{
+  "name": "@lumen/live-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx watch src/main.ts",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "@lumen/config": "*",
+    "@lumen/http": "*",
+    "@lumen/internal-identity": "*",
+    "@lumen/queue-helpers": "*",
+    "@lumen/redis-client": "*",
+    "@lumen/types": "*",
+    "fastify-raw-body": "^6.0.3",
+    "bullmq": "^5.34.3",
+    "livekit-server-sdk": "^2.9.6",
+    "mongoose": "^8.9.5",
+    "zod": "^4.6.6"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  }
+}

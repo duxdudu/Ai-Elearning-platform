@@ -1,0 +1,26 @@
+{
+  "name": "@lumen/auth-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx watch src/main.ts",
+    "start": "node dist/main.js"
+  },
+  "dependencies": {
+    "@lumen/config": "*",
+    "@lumen/http": "*",
+    "@lumen/internal-identity": "*",
+    "@lumen/queue-helpers": "*",
+    "@lumen/types": "*",
+    "@fastify/cookie": "^11.0.2",
+    "argon2": "^0.41.1",
+    "jose": "^5.9.6",
+    "mongoose": "^8.9.5",
+    "zod": "^4.6.6"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  }
+}
